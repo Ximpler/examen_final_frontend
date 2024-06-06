@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { Container, Center, Heading, Text, Box, InputRightElement, Input, Button, InputGroup } from '@chakra-ui/react'
 import { Grid, GridItem } from '@chakra-ui/react'
+import HomeCard from '../components/HomeCard';
 
 function Home() {
     const [count, setCount] = useState(0)
     return (
         <>
-            <Header name="PDM"></Header>
+           
             <Container maxW='container.lg'>
                 <Grid templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']} gap={4}>
                     <GridItem w='100%'>
