@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Container } from '@chakra-ui/react';
-import StudentTableEdit from '../components/StudentTableEdit';
+import StudentTable from '../components/StudentTable';
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
 
 
-function EditStudentList() {
+function AllStudentList() {
     const navigate = useNavigate(); // Mover useNavigate dentro del componente de función
 
     const [data, setData] = useState([]); // Inicializa como array
@@ -35,9 +35,9 @@ function EditStudentList() {
 return (
     <>
         <Container maxW='container.lg'>
-            <StudentTableEdit data={data} />
+            <StudentTable data={data} />
         </Container>
     </>
 )
 }
-export default EditStudentList;
+export default AllStudentList;
